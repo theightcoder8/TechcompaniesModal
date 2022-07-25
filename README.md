@@ -1,4 +1,4 @@
 # TechcompaniesModal
-techcompaniesmodal.netlify.app
+ - https://techcompaniesmodal.netlify.app/
  - Simple Modal Box with Vanilla JavaScript
  
