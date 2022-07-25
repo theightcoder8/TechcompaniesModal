@@ -1,6 +1,7 @@
 // Get DOM Elements
 const modal = document.querySelector('#main-modal');
-const microsoftModal = document.querySelector('.microsoft-content');const appleModal = document.querySelector('.apple-content');
+const microsoftModal = document.querySelector('.microsoft-content');
+const appleModal = document.querySelector('.apple-content');
 const metatModal = document.querySelector('.meta-content');
 
 const microsoftModalBtn = document.querySelector('#microsoft-btn');
@@ -15,9 +16,12 @@ const closeMeta = document.querySelector('#close-meta');
 microsoftModalBtn.addEventListener('click', microsoftOpenModal);
 appleModalBtn.addEventListener('click', appleOpenModal);
 metaModalBtn.addEventListener('click', metaOpenModal);
+
 closeMicrosoft.addEventListener('click', closeM);
 closeApple.addEventListener('click', closeA);
 closeMeta.addEventListener('click', closeF);
+
+window.addEventListener('click', outsideClick);
 
 // Open
 function microsoftOpenModal() {
@@ -40,3 +44,9 @@ function closeA() {
 function closeF() {
     metatModal.style.display = 'none';
 }
+
+function outsideClick(e) {
+    if (e.target == modal) {
+        microsoftModal.style.display = 'none'; appleModal.style.display = 'none'; metatModal.style.display = 'none'; 
+    }
+} 

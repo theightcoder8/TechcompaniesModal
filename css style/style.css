@@ -63,7 +63,17 @@ body {
     animation-name: modalopen;
     animation-duration: 1s;
 }
+.modal  i {
+    font-size: 20px;
+    transition: .4s;
+}
+.modal i:hover {
+    cursor: pointer;
+}
 
+.modal div {
+    padding: 2%;
+}
 .close {
     color: #ccc;
     float: right;
