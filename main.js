@@ -26,12 +26,18 @@ window.addEventListener('click', outsideClick);
 // Open
 function microsoftOpenModal() {
     microsoftModal.style.display = 'block';
+    appleModal.style.display = 'none';
+    metatModal.style.display = 'none';
 }
 function appleOpenModal() {
     appleModal.style.display = 'block';
+    microsoftModal.style.display = 'none';
+    metatModal.style.display = 'none';
 }
 function metaOpenModal() {
     metatModal.style.display = 'block';
+    microsoftModal.style.display = 'none';
+    appleModal.style.display = 'none';
 }
 
 // Close
